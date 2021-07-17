@@ -5,7 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Edit Makul</div>
+                <div class="card-header">Edit Makul
+    
+                <a href="{{route('makul')}}" class="btn btn-md btn-primary float-right">Data Makul</a></div>
                     <div class="card-body">
                     <form action="{{ route('update.makul', $makul->id )}}" method="post">
                     @csrf

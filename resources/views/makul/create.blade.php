@@ -5,9 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Tambah Makul</div>
+                <div class="card-header">Tambah Makul
+                <a href="{{route('makul')}}" class="btn btn-md btn-primary float-right">Data Makul</a></div>
+
                     <div class="card-body">
-                    <form action="{{ route('simpan.makul') }}" method="post">
+                    <form action="{{ route('simpan.makul') }}" method="post" >
                     @csrf
                         <div class="form-group">
                         <div class="form-row">

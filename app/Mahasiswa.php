@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mahasiswa extends Model
 {
-    protected $table  = 'mahasiswa';
-    protected $fillabel = ['user_id', 'tgl_lahir', 'tempat_lahir', 'telepon', 'alamat', 'gender', 'foto'];
+    protected $table = 'mahasiswa';
+    protected $fillable = ['user_id','npm', 'tempat_lahir', 'tgl_lahir', 'gender', 'telepon', 'alamat'];
 
-    public function User()
+    public function user()
     {
-        return $this->belongsTo(user::class, 'user_id','id');
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
 }
